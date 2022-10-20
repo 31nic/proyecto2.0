@@ -1,0 +1,17 @@
+{
+    "name": "Test Personalidad",
+    "short_name": "Test",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "./icono.jpg",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
