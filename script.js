@@ -1,4 +1,8 @@
-
+Notification.requestPermission().then(perm => {
+    if (perm === 'granted') {
+      
+    }
+  });
 function evaluar() {
     respuestas = new Array;
     for (i = 1; i < 39; i++) {
@@ -19,6 +23,14 @@ function evaluar() {
     if (suma <= 12) {
         mandarMensaje(1);
     }
+    new Notification("Alerta", {
+        body: 'Este es el mensaje',
+        icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIksdUsy16jNZHcpvKWfkwgxTlfm1wOPzmUenqeI&s',
+        vibrate: [100, 100, 100],
+        onClick: function () {
+          window.location = "https://google.es"
+        }
+      });
 }
 
 function mandarMensaje(numero) {
